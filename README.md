@@ -10,17 +10,17 @@ gitHub已经兴起多年了，然而我在上面并无所作为，表示很遗�
 
 我可能会涉及的内容包括：
 
-JS
+* JS
 
-CSS
+* CSS
 
-HTML5
+* HTML5
 
-GIS
+* GIS
 
-PHP
+* PHP
 
-PYTHON
+* PYTHON
 
 # 联系我
 QQ:891599396
