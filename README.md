@@ -24,6 +24,10 @@ gitHub已经兴起多年了，然而我在上面并无所作为，表示很遗�
 
 # 最新内容
 [leaflet源码解析](https://github.com/liujiusheng/blog/issues/3)
+[cursor你不知道的值](https://github.com/liujiusheng/blog/issues/7)
+
+有时间看issues的啦
+
 # 联系我
 QQ:891599396
 Mail:891599396@qq.com
