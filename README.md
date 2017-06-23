@@ -27,7 +27,7 @@ gitHub已经兴起多年了，然而我在上面并无所作为，表示很遗�
 
 [cursor你不知道的值](https://github.com/liujiusheng/blog/issues/7)
 
-[console](https://github.com/liujiusheng/blog/issues/15)
+[console.被我们遗忘的优秀调试工具](https://github.com/liujiusheng/blog/issues/15)
 
 有时间去看issues的啦！
 
