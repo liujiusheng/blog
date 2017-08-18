@@ -1,0 +1,28 @@
+import json
+f = open('合成.txt', 'r', encoding='utf-8');
+content = f.read();
+f.close();
+
+arr = content.split('\n');
+outobj = {};
+for x in arr:
+	eacharr = x.split(',');
+	key = str(eacharr[2]);
+	if outobj.get(key):
+		outobj[key].append([eacharr[3],eacharr[4]]);
+	else:
+		outobj[key] = [[eacharr[3],eacharr[4]]];
+
+print(outobj);
+tempobj = outobj.copy();
+for y in tempobj:
+	currentkey = y.split("-");
+	currentval = tempobj[y].copy();
+	currentval.reverse();	
+	outobj[str(currentkey[1]+'-'+currentkey[0])] = currentval;
+	print(currentval);
+
+#写成一个新文件
+f = open('crt.json', 'w');
+f.write(json.dumps(outobj));
+f.close();
