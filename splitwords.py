@@ -4,18 +4,28 @@ import re
 import json
 #
 #http://www.pythonscraping.com/pages/page1.html
-html = urlopen("https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/#id29")
+html = urlopen("https://www.crummy.com/software/BeautifulSoup/bs4/doc/")
 bsObj = BeautifulSoup(html.read(),"html.parser")
+print('get');
 #comment = bsObj.find_all(class_="bs4.element.Comment")
 #comment.clear()
 #script = bsObj.find_all("script")
 #script.clear()
-alltext = bsObj.get_text();
+bsObj.pre.clear();
+bsObj.code.clear();
+alltext = bsObj.get_text(strip=True);
 alltext = re.sub('\n+',' ',alltext)
+#alltext = re.sub('=',' ',alltext)
+#alltext = re.sub('"',' ',alltext)
+#alltext = re.sub('#',' ',alltext)
+#alltext = re.sub(',',' ',alltext)
+#去除标点符号
+alltext = re.sub('[\s+\.\!\/_,$%^*()\[\]\<\>?;\\\{\}\|\:\#=+\"\']+|[+——！，。？、~@#￥%……&*（）]+',' ',alltext);
 alltext = re.sub(' +',' ',alltext)
 alltext = re.sub('\[[0-9]*\]','',alltext)
 alltext = re.sub("\A\s+", "",alltext)
 alltext = re.sub("\s+\Z", "", alltext)
+
 alltext = bytes(alltext,'UTF-8')
 alltext = alltext.decode('ascii','ignore')
 alltextArray = alltext.split(' ')
