@@ -1,12 +1,18 @@
-from urllib.request import urlopen
+#from urllib.request import urlopen
+import requests
 from bs4 import BeautifulSoup
 import re
 import json
 #
 #http://www.pythonscraping.com/pages/page1.html
 #https://www.crummy.com/software/BeautifulSoup/bs4/doc/
-html = urlopen("http://www.redorbit.com/news/science/1113418636/study-reveals-the-secret-life-of-the-dodo/")
-bsObj = BeautifulSoup(html.read(),"html.parser")
+session = requests.Session();
+headers = {
+	"user-agent":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36",
+	"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"
+}
+html = session.get("https://vuejs.org/v2/guide/state-management.html",headers=headers)
+bsObj = BeautifulSoup(html.text,"html.parser")
 print('get page successful.');
 
 #过滤掉代码
@@ -22,8 +28,8 @@ alltext = re.sub('[\s+\.\!\/_,$%^*()\[\]\<\>?;\\\{\}\|\:\#=+\"\']+|[+——！�
 alltext = re.sub(' +',' ',alltext)
 alltext = re.sub('[0-9]*','',alltext)
 
-#alltext = re.sub("\A\s+", "",alltext)
-#alltext = re.sub("\s+\Z", "", alltext)
+alltext = re.sub("\A\s+", "",alltext)
+alltext = re.sub("\s+\Z", "", alltext)
 
 alltext = bytes(alltext,'UTF-8')
 alltext = alltext.decode('ascii','ignore')
