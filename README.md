@@ -25,6 +25,9 @@ gitHub已经兴起多年了，然而我在上面并无所作为，表示很遗�
 * PYTHON
 
 # 最新内容
+
+[WebAssembly让你的JS运行效率提高10倍](https://github.com/liujiusheng/blog/issues/115)
+
 [HTTP/2深入学习](https://github.com/liujiusheng/blog/issues/87)
 
 [leaflet源码解析](https://github.com/liujiusheng/blog/issues/3)
