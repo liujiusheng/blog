@@ -36,7 +36,9 @@ gitHub已经兴起多年了，然而我在上面并无所作为，表示很遗�
 
 [console.被我们遗忘的优秀调试工具](https://github.com/liujiusheng/blog/issues/15)
 
-[百度坐标、火星坐标、wgs84相互转换](https://github.com/liujiusheng/blog/issues/36)
+[百度坐标、火星坐标、wgs84相互转换、wgs84到web墨卡托投影的转换](https://github.com/liujiusheng/blog/issues/36)
+
+[坐标系经纬度与三维中XYZ的转换](https://github.com/liujiusheng/blog/issues/138)
 
 有时间去看issues的啦！
 
