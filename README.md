@@ -44,6 +44,8 @@ gitHub已经兴起多年了，然而我在上面并无所作为，表示很遗�
 
 [前端地图瓦片的拼接](https://github.com/liujiusheng/blog/issues/54)
 
+[POSTGIS里的geometry 和geography，如何正确计算空间距离](https://github.com/liujiusheng/blog/issues/197)
+
 有时间去看issues的啦！
 
 # 联系我
